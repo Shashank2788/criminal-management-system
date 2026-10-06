@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in - Criminal Data Management System</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login">
+  <form method="post" action="/login" class="login-card">
+    <h1>Records Office</h1>
+    <p class="sub">Sign in to Criminal Data Management</p>
+    <p id="err" class="err" hidden>Wrong username or password. Try again.</p>
+    <label>Username<input name="username" required autofocus autocomplete="username"></label>
+    <label>Password<input name="password" type="password" required autocomplete="current-password"></label>
+    <button class="primary">Sign in</button>
+  </form>
+  <script>if (location.search.includes('error')) document.getElementById('err').hidden = false;</script>
+</body>
+</html>
